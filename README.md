@@ -36,7 +36,7 @@ It is necessary to implement the `Client` class, which will encapsulate the conn
 
 ### Overview
 
-This code creates a tcp connection for the address `127.0.0.1:8888` and listens to all incoming requests. When a client connects, a new instance of the `ClientServerProtocol` class will be created, and when new data arrives, the `data_received` method of this object will be called. Inside `asyncio.Protocol` all the magic of processing requests through coroutines is hidden, it remains to implement the protocol of interaction between client and server.
+This code creates a tcp connection for the address `127.0.0.1:8888` and listens to all incoming requests. When a client connects, a new instance of the `ClientServerProtocol` class will be created, and when new data arrives, the `data_received` method of this object will be called.
 
 ### Usage
 

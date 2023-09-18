@@ -56,7 +56,6 @@ class ClientServerProtocol(asyncio.Protocol):
 
     def data_received(self, data):
         resp = self.process_data(data.decode())
-        print(resp)
         self.transport.write(resp.encode())
 
 
